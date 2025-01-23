@@ -32,42 +32,31 @@ a {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-nav {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.header-menu {
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation {
   display: flex;
-  gap: 40px;
+  align-items: center;
 }
 
 .header-logo {
   margin-right: 76px;
-}
-
-.header-link {
-  padding: 24px 0;
-}
-
-.header-address-list {
-  display: flex;
-  gap: 40px;
-}
-
-.header-address {
-  margin-left: auto;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .nav-list {
@@ -75,9 +64,41 @@ a {
   gap: 40px;
 }
 
-.contacts-list {
+.nav-link {
+  padding: 24px 0;
+}
+
+.address-list {
   display: flex;
   gap: 40px;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: #2e2f42;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo-light {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  max-width: 264px;
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .logo {
@@ -96,12 +117,6 @@ a {
   color: #2e2f42;
 }
 
-.nav-link {
-  padding: 24px 0;
-  color: #2e2f42;
-  font-weight: 500;
-}
-
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -115,10 +130,6 @@ a {
 .contacts-list {
   display: flex;
   gap: 40px;
-}
-
-.logo-light {
-  color: #f4f4fd;
 }
 
 .hero {
@@ -214,48 +225,10 @@ a {
   letter-spacing: 0.02em;
 }
 
-.footer {
-  padding: 100px 0;
-  background-color: #2e2f42;
-}
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer-text {
-  max-width: 264px;
-  color: #f4f4fd;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.contact-link {
-  color: #434455;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .about {
