@@ -224,7 +224,7 @@ a {
   gap: 16px;
 }
 
-.footer .logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
   color: #4d5ae5;
@@ -234,6 +234,10 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.logo-light {
+  color: #f4f4fd;
 }
 
 .footer-text {
@@ -367,35 +371,6 @@ img {
 
 .advantages-text {
   color: #434455;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-/* Footer styles */
-.footer {
-  padding: 100px 0;
-  background-color: #2e2f42;
-}
-
-.logo {
-  display: inline-block;
-  margin-bottom: 16px;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.logo-light {
-  color: #f4f4fd;
-}
-
-.footer-text {
-  max-width: 264px;
-  color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
