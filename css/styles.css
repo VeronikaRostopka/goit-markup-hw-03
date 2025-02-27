@@ -28,6 +28,7 @@ a {
   text-decoration: none;
 }
 
+/* Хедер: додаємо стилі для навігації та контактів */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -43,9 +44,11 @@ a {
   padding: 0 15px;
 }
 
+/* Зміна: додаємо margin-right: auto для навігації, щоб відступ між навігацією і контактами був автоматичним */
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .header-logo {
@@ -64,13 +67,33 @@ a {
   gap: 40px;
 }
 
+/* Зміна: додаємо display: block і фіксований колір для посилань у навігації*/
 .nav-link {
   padding: 24px 0;
+  display: block; /* Додано для роботи падінгів */
+  color: #2e2f42;
+  text-decoration: none; /* Прибираємо підкреслення */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
 }
 
 .address-list {
   display: flex;
   gap: 40px;
+}
+
+.address-list a {
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.contacts,
+.address-list {
+  font-style: normal;
+  margin-left: auto;
 }
 
 .footer {
@@ -117,38 +140,19 @@ a {
   color: #2e2f42;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
-}
-
-.contacts {
-  font-style: normal;
-  margin-left: auto;
-}
-
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
-
+/* Hero: видаляємо флекс і використовуємо марджини для центрування  */
 .hero {
   padding: 188px 0;
   background-color: #2e2f42;
 }
 
 .hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
+  text-align: center; /* Замінюємо flex на центрування текстом */
 }
 
 .hero-title {
   max-width: 496px;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 48px; /* Центруємо і задаємо відступ знизу */
   color: #ffffff;
   text-align: center;
   font-size: 56px;
@@ -161,7 +165,7 @@ a {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin: 0 auto;
+  margin: 0 auto; /* Центруємо кнопку */
   border: none;
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -177,6 +181,7 @@ a {
   background-color: #404bbf;
 }
 
+/* Команда: центруємо текст заголовка H3 і параграфа */
 .team {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -208,10 +213,14 @@ a {
   padding: 32px 0;
 }
 
+.team-card-content .subtitle,
+.team-card-content .text {
+  text-align: center;
+}
+
 .subtitle {
   margin-bottom: 8px;
   color: #2e2f42;
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -220,7 +229,6 @@ a {
 
 .text {
   color: #434455;
-  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -276,6 +284,11 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.portfolio-card-content .subtitle,
+.portfolio-card-content .text {
+  text-align: left; /* вирівнювання по лівому краю для секції "Портфоліо" */
 }
 
 .section {
